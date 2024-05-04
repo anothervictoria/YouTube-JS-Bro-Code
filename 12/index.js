@@ -165,35 +165,45 @@ const fullName = "Victoria Another";
 
 // console.log(firstChar, lastChar);
 
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-console.log(firstName);
-let lasName = fullName.slice(fullName.indexOf(" ") + 1);
-console.log(lasName);
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// console.log(firstName);
+// let lasName = fullName.slice(fullName.indexOf(" ") + 1);
+// console.log(lasName);
 
-//-------
+// //-------
 
-const email = "zefegegerone@gmail.com";
-let myName = email.slice(0, email.indexOf("@"));
+// const email = "zefegegerone@gmail.com";
+// let myName = email.slice(0, email.indexOf("@"));
 
-console.log(myName);
-let extention = email.slice(email.indexOf("@") + 1);
-console.log(extention);
+// console.log(myName);
+// let extention = email.slice(email.indexOf("@") + 1);
+// console.log(extention);
 
-//------------------------------------------------------------------------------------------------------------------------------
-let userName = window.prompt("Enter your username");
-// NO METHOD CHAINING
+// //------------------------------------------------------------------------------------------------------------------------------
+// let userName = window.prompt("Enter your username");
+// // NO METHOD CHAINING
 
-userName = userName.trim();
-let letter = userName.charAt(0);
-letter = letter.charAt(0);
-let extraChars = userName.slice(1);
-extraChars = extraChars.toLowerCase();
-userName = letter + extraChars;
-console.log(userName);
+// userName = userName.trim();
+// let letter = userName.charAt(0);
+// letter = letter.charAt(0);
+// let extraChars = userName.slice(1);
+// extraChars = extraChars.toLowerCase();
+// userName = letter + extraChars;
+// console.log(userName);
 
-// METHOD CHAINING
+// // METHOD CHAINING
 
-userName =
-  userName.trim().charAt(0).toUpperCase() +
-  userName.trim().slice(1).toLowerCase();
-console.log(userName);
+// userName =
+//   userName.trim().charAt(0).toUpperCase() +
+//   userName.trim().slice(1).toLowerCase();
+// console.log(userName);
+
+// //------------------------------------------------------------------------------------------------------------------------------
+// COMPARISION OPERATORS
+
+const PI = 3.14;
+if (PI === "3.14") {
+  console.log("That is PI");
+} else {
+  console.log("That is NOT PI");
+}
