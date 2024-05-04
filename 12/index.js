@@ -149,3 +149,32 @@ let phoneNumber = "123-456-7890";
 
 phoneNumber = phoneNumber.padEnd(15, "0"); //first parameter - how may character should out string contain, second - with which character it has to end (in this case it will fill it with zeros untill it becomes 15 characters long)
 console.log(phoneNumber);
+
+//-------------------------------------
+//STRING SLICING
+
+const fullName = "Victoria Another";
+// console.log(fullName.length);
+// let firstName = fullName.slice(0, 8); //ending index is exclusive
+// console.log(firstName);
+// let lastName = fullName.slice(8, 17);
+// console.log(lastName);
+
+// let firstChar = fullName.slice(0, 2); //start — The index to the beginning of the specified portion of stringObj.
+// let lastChar = fullName.slice(-3); //if you start with -1 it means you start from the last index
+
+// console.log(firstChar, lastChar);
+
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+console.log(firstName);
+let lasName = fullName.slice(fullName.indexOf(" ") + 1);
+console.log(lasName);
+
+//-------
+
+const email = "zefegegerone@gmail.com";
+let myName = email.slice(0, email.indexOf("@"));
+
+console.log(myName);
+let extention = email.slice(email.indexOf("@") + 1);
+console.log(extention);
