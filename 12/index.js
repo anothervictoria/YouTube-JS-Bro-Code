@@ -86,7 +86,7 @@ console.log(letterGrade);
 
 ////////// STRING METHODS
 
-let userName = "Vic toria";
+// let userName = "Vic toria";
 // userName.charAt(0); //get the character at index 0
 // console.log(userName.charAt(0));
 
@@ -101,10 +101,10 @@ let userName = "Vic toria";
 // userName = userName.trim(); //Removes the leading and trailing white space and line terminator characters from a string.
 // console.log();
 
-userName.toUpperCase(); //returns all letter an uppercase
-console.log(userName.toUpperCase());
-userName.toLowerCase(); //returns all letter an lowercase
-userName.repeat(3); //how many times you want to repeat the string
+// userName.toUpperCase(); //returns all letter an uppercase
+// console.log(userName.toUpperCase());
+// userName.toLowerCase(); //returns all letter an lowercase
+// userName.repeat(3); //how many times you want to repeat the string
 
 //--------------
 
@@ -130,7 +130,7 @@ userName.repeat(3); //how many times you want to repeat the string
 
 //---------------------
 
-let result = userName.includes(" "); // returns true or false based on if this string contains the part from the parameter
+// let result = userName.includes(" "); // returns true or false based on if this string contains the part from the parameter
 
 // if (result) {
 //   console.log(`Your username can't include ' '`);
@@ -178,3 +178,22 @@ let myName = email.slice(0, email.indexOf("@"));
 console.log(myName);
 let extention = email.slice(email.indexOf("@") + 1);
 console.log(extention);
+
+//------------------------------------------------------------------------------------------------------------------------------
+let userName = window.prompt("Enter your username");
+// NO METHOD CHAINING
+
+userName = userName.trim();
+let letter = userName.charAt(0);
+letter = letter.charAt(0);
+let extraChars = userName.slice(1);
+extraChars = extraChars.toLowerCase();
+userName = letter + extraChars;
+console.log(userName);
+
+// METHOD CHAINING
+
+userName =
+  userName.trim().charAt(0).toUpperCase() +
+  userName.trim().slice(1).toLowerCase();
+console.log(userName);
