@@ -101,48 +101,52 @@
 
 // happyBirthday("Victoria", 30);
 
-function add(x, y) {
-  let result = x + y;
-  return result;
-}
-function subtract(x, y) {
-  return x - y;
-}
-function multiply(x, y) {
-  return x * y;
-}
-function divide(x, y) {
-  return x / y;
-}
+// function add(x, y) {
+//   let result = x + y;
+//   return result;
+// }
+// function subtract(x, y) {
+//   return x - y;
+// }
+// function multiply(x, y) {
+//   return x * y;
+// }
+// function divide(x, y) {
+//   return x / y;
+// }
 
-let answer = add(2, 3);
-console.log(answer);
-console.log(subtract(4, 5));
-console.log(multiply(4, 6));
-console.log(divide(7, 5));
+// let answer = add(2, 3);
+// console.log(answer);
+// console.log(subtract(4, 5));
+// console.log(multiply(4, 6));
+// console.log(divide(7, 5));
 
-function isEven(number) {
-  // if (number % 2 === 0) {
-  //   return "This is an even number";
-  // } else {
-  //   return "This is NOT an even number";
-  // }
-  return number % 2 === 0
-    ? "This is an even number"
-    : "This is NOT an even number";
-}
+// function isEven(number) {
+//   // if (number % 2 === 0) {
+//   //   return "This is an even number";
+//   // } else {
+//   //   return "This is NOT an even number";
+//   // }
+//   return number % 2 === 0
+//     ? "This is an even number"
+//     : "This is NOT an even number";
+// }
 
-console.log(isEven(87));
+// console.log(isEven(87));
 
-function isValidEmail(email) {
-  // if (email.includes("@")) {
-  //   return true;
-  // } else {
-  //   return false;
-  // }
+// function isValidEmail(email) {
+//   // if (email.includes("@")) {
+//   //   return true;
+//   // } else {
+//   //   return false;
+//   // }
 
-  return email.includes("@") ? true : false;
-}
+//   return email.includes("@") ? true : false;
+// }
 
-console.log(isValidEmail("Victoria@fake.com"));
-console.log(isValidEmail("ElonMusk.com"));
+// console.log(isValidEmail("Victoria@fake.com"));
+// console.log(isValidEmail("ElonMusk.com"));
+
+//_-----------------------------------------------------------
+//------------------------------------------------------------
+// 
