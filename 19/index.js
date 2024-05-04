@@ -1,3 +1,5 @@
+//WHILE LOOP
+
 // let username = "";
 // if (username === "") {
 //   console.log(`You didn't enter your name`);
@@ -19,18 +21,34 @@
 
 //____________________________________
 
-let loggedIn = false;
-let username;
-let password;
+// let loggedIn = false;
+// let username;
+// let password;
 
-while (!loggedIn) {
-  username = window.prompt(`Enter your username`);
-  password = window.prompt(`Enter your password`);
+// while (!loggedIn) {
+//   username = window.prompt(`Enter your username`);
+//   password = window.prompt(`Enter your password`);
 
-  if ((username === "myUsername") & (password === "myPassword")) {
-    loggedIn = true;
-    console.log(`You are logged in`);
+//   if ((username === "myUsername") & (password === "myPassword")) {
+//     loggedIn = true;
+//     console.log(`You are logged in`);
+//   } else {
+//     console.log(`Invalid credentials! Please try again!`);
+//   }
+// }
+
+//_-----------------------------------------------------------
+//------------------------------------------------------------
+// FOR LOOP
+for (let i = 0; i <= 2; i++) {
+  console.log(`Hello!`);
+}
+
+for (let i = 0; i <= 20; i++) {
+  if (i === 13) {
+    continue;
+    // break;
   } else {
-    console.log(`Invalid credentials! Please try again!`);
+    console.log(i);
   }
 }
