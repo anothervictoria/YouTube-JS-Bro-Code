@@ -83,3 +83,69 @@ switch (true) {
 }
 
 console.log(letterGrade);
+
+////////// STRING METHODS
+
+let userName = "Vic toria";
+// userName.charAt(0); //get the character at index 0
+// console.log(userName.charAt(0));
+
+// userName.indexOf("i"); //returns the index of this letter
+// console.log(userName.indexOf("i"));
+
+// userName.lastIndexOf("i"); //returns the last index of this letter
+// console.log(userName.lastIndexOf("i"));
+// console.log(userName.length); //returns length of the string
+
+// let userName = "Victoria    "
+// userName = userName.trim(); //Removes the leading and trailing white space and line terminator characters from a string.
+// console.log();
+
+userName.toUpperCase(); //returns all letter an uppercase
+console.log(userName.toUpperCase());
+userName.toLowerCase(); //returns all letter an lowercase
+userName.repeat(3); //how many times you want to repeat the string
+
+//--------------
+
+// let result = userName.startsWith(" "); //we check if the string starts with (smth in the parameter), returns true or false
+// console.log(result);
+
+// if (result) {
+//   console.log(`Your username can't began with ' '`);
+// } else {
+//   console.log(userName);
+// }
+
+//---------------------
+
+// let result = userName.endsWith(" "); //we check if the string ends with (smth in the parameter), returns true or false
+// console.log(result);
+
+// if (result) {
+//   console.log(`Your username can't end with ' '`);
+// } else {
+//   console.log(userName);
+// }
+
+//---------------------
+
+let result = userName.includes(" "); // returns true or false based on if this string contains the part from the parameter
+
+// if (result) {
+//   console.log(`Your username can't include ' '`);
+// } else {
+//   console.log(userName);
+// }
+
+//---------------------
+
+let phoneNumber = "123-456-7890";
+// phoneNumber = phoneNumber.replaceAll("-", ""); //replaces first argument characters with second argument characters
+// console.log(phoneNumber);
+
+// phoneNumber = phoneNumber.padStart(15, "0"); //first parameter - how may character should out string contain, second - from with character it has to start (in this case it will fill it with zeros untill it becomes 15 characters long)
+// console.log(phoneNumber);
+
+phoneNumber = phoneNumber.padEnd(15, "0"); //first parameter - how may character should out string contain, second - with which character it has to end (in this case it will fill it with zeros untill it becomes 15 characters long)
+console.log(phoneNumber);
