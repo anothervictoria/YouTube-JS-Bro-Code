@@ -51,6 +51,8 @@ sum(displayPage, 3, 4);
 //--------------------------------------------------------
 //--------------------------------------------------------
 
+//FOREACH
+
 // let numbers = [1, 2, 3, 4, 5];
 
 // // numbers.forEach(display);
@@ -75,30 +77,89 @@ sum(displayPage, 3, 4);
 
 //--------------------------------------------------------
 
-let fruits = ["apple", "orange", "banana", "coconut"];
-function display(element) {
-  console.log(element);
+// let fruits = ["apple", "orange", "banana", "coconut"];
+// function display(element) {
+//   console.log(element);
+// }
+
+// fruits.forEach(display);
+
+// function upperCase(element, index, array) {
+//   array[index] = element.toUpperCase();
+// }
+
+// function lowerCase(element, index, array) {
+//   array[index] = element.toLowerCase();
+// }
+
+// fruits.forEach(upperCase);
+// fruits.forEach(display);
+
+// fruits.forEach(lowerCase);
+// fruits.forEach(display);
+
+// function capitalize(element, index, array) {
+//   array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+// }
+
+// fruits.forEach(capitalize);
+// fruits.forEach(display);
+
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+
+// ------- MAP() ---------------
+
+const numbers = [1, 2, 3, 4, 5];
+
+function square(element) {
+  return Math.pow(element, 2);
 }
 
-fruits.forEach(display);
-
-function upperCase(element, index, array) {
-  array[index] = element.toUpperCase();
+function cube(element) {
+  return Math.pow(element, 3);
 }
 
-function lowerCase(element, index, array) {
-  array[index] = element.toLowerCase();
+const squares = numbers.map(square);
+console.log(squares);
+
+const cubes = numbers.map(cube);
+console.log(cubes);
+
+//--------------------------------------------------------
+
+const students = ["Spongebob", "Patrick", "Squidward", "Sandy"];
+
+function upperCase(element) {
+  return element.toUpperCase();
 }
 
-fruits.forEach(upperCase);
-fruits.forEach(display);
-
-fruits.forEach(lowerCase);
-fruits.forEach(display);
-
-function capitalize(element, index, array) {
-  array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+function lowerCase(element) {
+  return element.toLowerCase();
 }
 
-fruits.forEach(capitalize);
-fruits.forEach(display);
+const studentsUpper = students.map(upperCase);
+console.log(studentsUpper);
+
+const studentsLower = students.map(lowerCase);
+console.log(studentsLower);
+
+//--------------------------------------------------------
+
+const dates = ["2024-1-10", "2025-2-20", "2026-3-30"];
+const formattedDates = dates.map(formatDates);
+console.log(formattedDates);
+
+function formatDates(element) {
+  const parts = element.split("-");
+  return `${parts[1]}/${parts[2]}/${parts[0]} }`;
+}
+
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
